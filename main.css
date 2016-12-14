@@ -6,6 +6,7 @@ html, body {
 	font-size:0.95em;
 	max-width:850px;
 	align-content:center;
+	background-color:silver;
 }
 
 header img{
@@ -20,6 +21,7 @@ ul
 	align-content:left;
 	white-space:normal;
 	text-transform:uppercase;
+	background-color:gold;
 	}
 
 li {
@@ -37,7 +39,7 @@ a:hover {color:silver;}
 a:active {color:green;}
 
 
-#content{
+.content{
 	display:block;
 	background:url(fond.jpg)100%;
 		margin-top:1em;
@@ -63,7 +65,7 @@ a:active {color:green;}
 		}
 	
 h2 
-{
+{	font-size:1.75em;
 	text-shadow:0.15em 0.3em 0.15em rgba(0,0,0,.3);
 	margin:5px 5px 5px 5px 5px;
 	padding: 5px 5px 5px 5px;
@@ -73,38 +75,153 @@ h2
 
 
 p{
-margin :10px 5px 10px 5px;
-padding:5px 1px 5px 1px;
+	margin :10px 30px 10px 30px;
+	padding:5px 1px 5px 1px;
+	font-size:1.2em;
+	line-height:1.5em;
+}
+
+
+main:first-letter{
+	float:left;
+	margin-top:-0.05em;
+	margin-right:0.15em;
+	color:gold;
 }
 
 h3
 {
+	font-size:1.25em;
 margin:10px 10px 10px 10px 10px;
 padding: 5px 5px 5px 5px;
 font-family: Arial, Verdana, Sans-serif;
 }
 
 table img{
-	width:100%;
+	width:95%;
 	border:3px solid green;
 }	
-table{background: rgb(143,221,79);
+img{
+	max-width:100%;
+	max-height:auto;
+}
+
+table{table-layout: auto;
+	background: rgb(143,221,79);
 background: -moz-linear-gradient(45deg,  rgba(143,221,79,1) 0%, rgba(153,101,78,1) 39%, rgba(102,68,49,1) 68%, rgba(86,46,18,1) 100%);
 background: -webkit-linear-gradient(45deg,  rgba(143,221,79,1) 0%,rgba(153,101,78,1) 39%,rgba(102,68,49,1) 68%,rgba(86,46,18,1) 100%);
 background: linear-gradient(45deg,  rgba(143,221,79,1) 0%,rgba(153,101,78,1) 39%,rgba(102,68,49,1) 68%,rgba(86,46,18,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fdd4f', endColorstr='#562e12',GradientType=1 );
-;
 border-radius:10px;
 border:silver solid;
 }
+
+	tr,td{
+		padding:5px;
+		}
+
 
 figure{
 	max-width:850px;
 	align-content:center;
 }
+div.profil{
+	float:left;
+	max-width:750px;
+	height:auto;
+	margin:10px;
+	}
+div.deer1{
+	float:right;
+	max-width:300px;
+	height:auto;
+	margin:10px;
+	padding:3px;
+}
+
+div.soustitre{
+	float:left;
+	max-width:750px;
+	height:auto;
+	margin:0em;
+}
+
+
+.one{
+	width:760px;
+	margin:30px;
+	padding:0.25em;
+	background-color:#9FFF40;
+	opacity:0.7;
+	border:dashed 3px green;
+	border-radius:5px;
+	clear:both;
+	}
+
+.columns{
+	  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 2em;
+  column-gap: 2em;
+  margin:20px;
+}
+	
+
+
+div.toundra{
+	float:left;
+	display:block;
+	max-width:550px;
+	max-height:auto%;
+	align-content:center;
+	border: 4px double green;
+	border-radius:6px;
+	margin-left:20px;
+	margin-right:10px;
+	margin-top:20px;
+	clear:both;}
+	
+figure.caribou{
+  float:right;
+  margin: 20px;
+  padding:0.75em;
+  width:300px;
+  height:200px;
+  border:4px double green;
+  border-radius:6px;
+}
+
+
+figure.cerfasie{
+  float:left;
+  margin: 20px;
+  padding:0.75em;
+  width:300px;
+  height:200px;
+   border:4px double green;
+  border-radius:6px;
+}
+
+
+
+
+figure.cerfjaponese{
+	display:in-line;
+	float:right;
+  margin: 15px;
+  padding:0.75em;
+  padding-bottom:0em;
+  width:300px;
+  height:204px;
+  border:4px double green;
+  border-radius:6px;
+  background-color:white;
+}
+
 
 footer
-{
+{display:block;
 	background:url(titre.gif)100% no-repeat;
 	background-size:cover;
 	color:white;
