@@ -1,0 +1,180 @@
+html, body {
+	margin: auto;
+	padding:2px 3px 2px 3px;
+	font-family:tahoma, geneva, sans-serif;
+	color:black;
+	font-size:0.95em;
+	max-width:850px;
+	align-content:center;
+	background-color:silver;
+}
+
+header img{
+	width:100%;
+	}
+
+
+
+@media only screen and(max-width:20em){
+	nav{
+		position: fixed;
+  		left: auto;
+  		top: 50%;
+  		width: 8em;
+  		margin-top: -2.5em;
+		border-bottom-right-radius: 4px;
+  	
+  li { 
+	  margin: auto;
+	  padding-left:auto;
+	list-style-type: none;
+}
+	
+}
+
+.content{
+	display:block;
+	background:url(fond.jpg)100%;
+		margin-top:1em;
+		padding:0.25em 0.25em 0.25em 0.25em;
+		background-size:cover;
+		background-position:top left;
+		background-repeat:repeat;
+		background-clip:padding-box;
+		background-origin:border-box;
+		border:3px solid #99cc00;
+		border-radius:0.75em;
+		height:auto;
+		text-align:justify;}
+	
+	main::after{content:"Editing : December 6 2016";
+	display:block;
+	color:black;
+	font-style:italic;
+	font-size:0.65em;
+	line-height:2em;
+	text-align:right;
+	text-shadow:3px 6px 2px rgba(0,0,0,.3);
+		}
+	
+h2 
+{	font-size:1.75em;
+	text-shadow:0.15em 0.3em 0.15em rgba(0,0,0,.3);
+	margin:5px 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	font-family:Arial, Verdana, Sans-serif;
+	color:ffffff;
+}
+
+
+p{
+	margin :10px 30px 10px 30px;
+	padding:5px 1px 5px 1px;
+	font-size:1.2em;
+	line-height:1.5em;
+}
+
+
+h3
+{
+	font-size:1.25em;
+margin:10px 10px 10px 10px 10px;
+padding: 5px 5px 5px 5px;
+font-family: Arial, Verdana, Sans-serif;
+}
+
+	
+img{
+	max-width:100%;
+	max-height:auto;
+}
+
+figure{
+	min-width:50%;
+	max-width:100%;
+	align-content:center;
+}
+div.profil{
+	float:left;
+	max-width:360px;
+	height:auto;
+	margin:10px;
+	}
+
+div.deer1{
+	max-width:10%;
+	height:auto;
+	margin:10px;
+	padding:3px;
+}
+
+div.soustitre{
+	float:left;
+	max-width:750px;
+	height:auto;
+	margin:0em;
+}
+
+
+div.toundra{
+	float:left;
+	display:block;
+	max-width:550px;
+	max-height:auto%;
+	align-content:center;
+	border: 4px double green;
+	border-radius:6px;
+	margin-left:20px;
+	margin-right:10px;
+	margin-top:20px;
+	clear:both;}
+	
+figure.caribou{
+  float:right;
+  margin: 20px;
+  padding:0.75em;
+  width:300px;
+  height:200px;
+  border:4px double green;
+  border-radius:6px;
+}
+
+
+figure.cerfasie{
+  float:left;
+  margin: 20px;
+  padding:0.75em;
+  width:300px;
+  height:200px;
+   border:4px double green;
+  border-radius:6px;
+}
+
+
+
+
+figure.cerfjaponese{
+	display:in-line;
+	float:right;
+  margin: 15px;
+  padding:0.75em;
+  padding-bottom:0em;
+  width:300px;
+  height:204px;
+  border:4px double green;
+  border-radius:6px;
+  background-color:white;
+}
+
+
+footer{
+	display:block;
+	background:url(titre.gif)100% no-repeat;
+	background-size:cover;
+	color:white;
+	margin-top:1em;
+	padding:0.15em 0.15em 0.15em 0.15em;
+	border:3px solid #99cc00;
+	border-radius:0.75em;
+	text-align:justify;
+}
