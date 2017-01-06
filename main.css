@@ -27,10 +27,16 @@ nav ul {
     margin: 0;
     padding: auto;
 	overflow:hidden;
-    background-color: hsla(80, 15%, 49%, 0.7);
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a4b357+0,75890c+100&0.81+9,1+70 */
+background: -moz-linear-gradient(top,  rgba(164,179,87,0.81) 0%, rgba(160,175,80,0.81) 9%, rgba(131,150,34,1) 70%, rgba(117,137,12,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(164,179,87,0.81) 0%,rgba(160,175,80,0.81) 9%,rgba(131,150,34,1) 70%,rgba(117,137,12,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(164,179,87,0.81) 0%,rgba(160,175,80,0.81) 9%,rgba(131,150,34,1) 70%,rgba(117,137,12,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfa4b357', endColorstr='#75890c',GradientType=0 ); /* IE6-9 */
+
     top: auto;
-	border-top:3px solid white;
-	border-bottom:3px solid white;
+	border:3px solid white;
+
+	
 	}
 
 ul li {display:inline;
@@ -49,8 +55,7 @@ li a {  display: inline-block;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color:#996633;}
+
 
 nav a:link {
 		color: whitesmoke;
@@ -59,8 +64,28 @@ nav a:link {
 nav a:visited {
 		color: oldlace;
 	}
+li a:hover:not(.active) {
+    background-color:#996633;}
+
+nav a:hover{transform:scale(1.3,1.3);
+	transform:translate(5px,5px);}
+
+nav a:active{background-color:chocolate;}
 
 
+.titre{background-image:url(fondmobile.png);
+	font-size: 1.35em;
+	font-family:'Ubuntu', sans-serif;
+	text-align: left;
+	background-size:  220px 60px;
+	background-repeat:  no-repeat;
+	padding-bottom:10px;}
+
+
+.titre:hover{transform:rotatez(-2deg);}
+.titre:hover{color:white;}
+
+	   
 
 	
 	/**--Main content-->*/
@@ -88,15 +113,21 @@ nav a:visited {
 	text-align:right;
 	text-shadow:3px 6px 2px rgba(0,0,0,.3);
 		}
-a:link{color:gray}
-a:visited{color:darkgray;}
+
+main a:link{color:brown;}
+main a:visited{color:sienna;}
+main a:hover{color:black;
+	transform:scale(1.3,1.3);
+	transform:translate(5px,5px);}
+
+
 
 h1{
 	margin-left:10px;
 font-family:'Arima Madurai', cursive;
 		font-size: 3em;
 	color:white;
-line-height: 53px;}
+line-height: 1px;}
 
 h2 
 {	font-family: 'Arima Madurai',cursive;
@@ -106,6 +137,8 @@ h2
 	padding: 5px 5px 5px 5px;
 	color:ffffff;
 }
+
+h2:hover{transform:rotatez(2deg);}
 
 
 p{
@@ -143,6 +176,10 @@ figure img{
 	border-radius:0.85em;
 	
 }
+
+img:hover,focus{ -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2);}
 
 /**--index-->*/
 .first{
@@ -193,6 +230,7 @@ figure.caribou{
 }
 
 
+
 figure.cerfasie{
   float:left;
   margin: 20px;
@@ -240,12 +278,13 @@ iframe{
 	
 }
 
+
+
 /**--footer-->*/
 
 footer
 {display:block;
-	background-color: hsla(80, 15%, 49%, 0.7);
-	background-size:cover;
+background: black;
 	color:white;
 	padding:0.15em 0.15em 0.15em 0.15em;
 	border-bottom:3px solid #99cc00;
@@ -256,12 +295,15 @@ footer
 }
 
 footer a:link {
-		color: whitesmoke;
+	color: whitesmoke;}
+footer a:hover{color:black;transform:scale(1.4,1.4);
+	transform:translate(5px,5px);
 	}
 
 footer a:visited {
 		color: darkorange;
 	}
+
 
 	
 /**--special styles depending of the width of viewport-->*/
@@ -286,7 +328,7 @@ footer a:visited {
 	nav{
 		position: fixed; z-index:5;
   		left: auto;
-  		top: 50%;
+  		top: 40%;
   		width: 8em;
 		height: auto;
   		margin-top: -2.5em;
@@ -303,7 +345,7 @@ footer a:visited {
 	}
 	
   li {
-	  	font-family: 'Ubuntu Condensed', sans-serif; 
+	  	font-family: 'Ubuntu', sans-serif; 
 	  	font-size: 0.80em;
 	  	line-height: 0.75em;
 	 }
@@ -316,14 +358,25 @@ footer a:visited {
 		font-style: normal;
 	}
 	
+	/* Rotate li */
+	a:hover{
+		transform:scale(1.1,1.1)
+}
+	
 	h1{vertical-align: middle;
 		font-size: 1.9em;}
 	
 	#content {
 	display:block;
 	background-image:none;
-		background-color: #333333;
-		color:gainsboro;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+40,b7ad70+100;Brown+3D */
+background: rgb(213,206,166); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(213,206,166,1) 0%, rgba(201,193,144,1) 40%, rgba(183,173,112,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+
+		color:black;
 		border-top:4px solid white;
 		border-bottom: 4px solid white;
 		}
@@ -353,8 +406,7 @@ footer a:visited {
 
 	footer
 {display:block;
-	background-color: hsla(80, 15%, 49%, 0.7);
-	background-size:cover;
+	background-color: black;
 	color:white;
 	padding:0.15em 0.15em 0.15em 0.15em;
 	border-bottom:4px solid white;
